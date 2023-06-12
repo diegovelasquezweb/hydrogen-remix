@@ -23,7 +23,7 @@ interface HomeSeoData {
 
 export const headers = routeHeaders;
 
-  export async function loader({params, context}: LoaderArgs) {
+export async function loader({params, context}: LoaderArgs) {
   const {language, country} = context.storefront.i18n;
 
   if (
